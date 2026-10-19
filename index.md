@@ -10,8 +10,8 @@ header:
       url: "/about/"
     - label: "Projects"
       url: "/projects/"
-title: "Hi, I'm Your Name"
-excerpt: "One-line tagline — what you build, break, or write about."
+title: "Hi, I'm YAHIA"
+excerpt: "and this is the-REPO."
 feature_row:
   - title: "Featured project"
     excerpt: "A short description of the thing you're most proud of. Link it to the project page."
