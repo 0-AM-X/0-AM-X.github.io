@@ -16,7 +16,7 @@ baseurl: ""
 repository: "0-AM-X/0-AM-X.github.io"
 
 # --- Masthead / breadcrumbs ---
-masthead_title: "Your Name"
+masthead_title: "yahia"
 breadcrumbs: true                      # show a breadcrumb trail on pages
 words_per_minute: 200
 
@@ -28,9 +28,9 @@ atom_feed:
 
 # --- Default author (shown in the sidebar) ---
 author:
-  name: "Your Name"
+  name: "yahia"
   # avatar: "/assets/images/avatar.png"   # drop a square image in assets/images/ and uncomment
-  bio: "One-line bio — what you build and care about."
+  bio: "and this is the-REPO."
   location: "City, Country"
   links:
     - label: "GitHub"
