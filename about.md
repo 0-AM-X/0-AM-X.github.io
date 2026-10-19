@@ -4,9 +4,7 @@ title: "About"
 excerpt: "Who I am and what I work on."
 ---
 
-Write a paragraph or two about yourself. What you build, the domains you care about
-(security, infrastructure, backend, ML — whatever is true), and what you're open to.
-
+pentester, CTF player and bug hunter 
 ## What I do
 
 - **Thing one** — a line about it.
