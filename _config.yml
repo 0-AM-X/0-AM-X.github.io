@@ -1,0 +1,95 @@
+# Personal site / portfolio — minimal-mistakes via remote_theme (GitHub Pages, no theme vendoring).
+# Replace every <PLACEHOLDER>. Full theme docs: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+# Skin: default | air | aqua | contrast | dark | dirt | mint | neon | plum | sunrise
+minimal_mistakes_skin: "default"   # try: "dark", "mint", "neon", "sunrise"
+
+locale: "en-US"
+title: "0-AM-X"
+title_separator: "-"
+name: "0-AM-X"
+description: "the_REPO."
+url: "https://0-AM-X.github.io"
+baseurl: ""
+repository: "0-AM-X/0-AM-X.github.io"
+
+# --- Masthead / breadcrumbs ---
+masthead_title: "Your Name"
+breadcrumbs: true                      # show a breadcrumb trail on pages
+words_per_minute: 200
+
+# --- Search & feeds ---
+search: true
+search_full_content: true
+atom_feed:
+  hide: true
+
+# --- Default author (shown in the sidebar) ---
+author:
+  name: "Your Name"
+  # avatar: "/assets/images/avatar.png"   # drop a square image in assets/images/ and uncomment
+  bio: "One-line bio — what you build and care about."
+  location: "City, Country"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/0-AM-X"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/0-AM-X"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:you@example.com"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/0-AM-X"
+
+# --- Build ---
+include:
+  - _pages
+permalink: /:categories/:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-remote-theme        # loads remote_theme (GitHub Pages enables it too; explicit helps local builds)
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# --- Collections ---
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# --- Front matter defaults ---
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+  - scope: { path: "", type: pages }
+    values:
+      layout: single
+      author_profile: true
+  - scope: { path: "", type: projects }
+    values:
+      layout: single
+      author_profile: true
+
+# --- Archives (used by _pages/categories.md / tags.md if you add them) ---
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
